@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test</title>
+
+    <!--Style css--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Manrope:wght@300;400;500;600;700&family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/jqueryui-selectmenu/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+    <div class="landing-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrap">
+                    <div class="header__logo-wrap">
+                        <a class="header__logo-link" href="#">
+                            <img src="img/logo.svg" alt="LoremIpsum.Net" class="header__logo-img">
+                        </a>
+                    </div>
+                    <nav class="header__nav nav">
+                        <ul class="nav__list" id="nav">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link nav__link--color active">Бизнес</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link nav__link--color">О нас</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link nav__link--color">Цены</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link nav__link--color">Оформить заказ</a>
+                            </li>
+                        </ul>
+                        <div class="nav__menu menu" id="menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrap">
+                    <h1 class="hero__title hero__title--color hero__animate"><span>Lorem ipsum</span> dolor sit ametconsectetur <span>adipiscing</span> </h1>
+                    <div class="hero__content hero__animate">
+                        <h4 class="hero__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus!</h4>
+                        <ul class="hero__list">
+                            <li class="hero__item">Totam rem aperiam eaque ipsa</li>
+                            <li class="hero__item">Sit voluptatem accusantium doloremque laudantium</li>
+                            <li class="hero__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+                        </ul>
+                    </div>
+                    <div class="hero__btn-wrap buttons">
+                        <a href="#" class="hero__btn btn btn--pryme">
+                            Заказать
+                        </a>
+                        <a href="#" class="hero__btn btn btn--light">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="order">
+            <div class="container">
+                <div class="order__wrap">
+                    <h2 class="order__title"><span>Оформление</span> Заказа</h2>
+                    <h5 class="order__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</h5>
+                    <div class="order__scheme scheme">
+                        <div class="scheme__item-wrap">
+                            <div class="scheme__item scheme__item--1">
+                                <img src="img/icon1.svg" alt="#" class="scheme__icon">
+                            </div>
+                            <span class="scheme__text">Lorem ipsum dolor sit amet</span>
+                        </div>
+                        <div class="scheme__item-wrap">
+                            <div class="scheme__item scheme__item--2">
+                                <img src="img/icon2.svg" alt="#" class="scheme__icon">
+                            </div>
+                            <span class="scheme__text">Сonsecteturadipiscing elit</span>
+                        </div>
+                        <div class="scheme__item-wrap">
+                            <div class="scheme__item scheme__item--3">
+                                <img src="img/icon3.svg" alt="#" class="scheme__icon">
+                            </div>
+                            <span class="scheme__text">Sed do eiusmod tempor</span>
+                        </div>
+                        <div class="scheme__item-wrap">
+                            <div class="scheme__item scheme__item--4">
+                                <img src="img/icon4.svg" alt="#" class="scheme__icon">
+                            </div>
+                            <span class="scheme__text">Esse cillum dolore eu fugiat</span>
+                        </div>
+                        <div class="scheme__item-wrap scheme__item-wrap--last">
+                            <div class="scheme__item scheme__item--5">
+                                <img src="img/icon5.svg" alt="#" class="scheme__icon">
+                            </div> 
+                            <span class="scheme__text">Excepteur sint occaecat cupidatat non proident</span>
+                        </div>
+                    </div>
+                    <form class="form" action="/action_page.php">
+                        <div class="form__row">
+                            <select id="system" name="system" >
+                                <option selected hidden>Выберите тип системы</option>
+                                <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+                                <option value="Nemo enim ipsam">Nemo enim ipsam</option>
+                                <option value="Et harum quidem">Et harum quidem</option>
+                                <option value="Temporibus autem">Temporibus autem</option>
+                                <option value="Itaque earum rerum">Itaque earum rerum</option>
+                                <option value="Nemo enim ipsam">Nemo enim ipsam</option>
+                                <option value="System disabled" disabled>System disabled</option>
+                            </select>
+                            <input type="email" id="email" name="email" placeholder="Ваш e-mail">
+                            <input type="text" id="name" name="name" placeholder="Ваше имя">
+                        </div>
+                        <div class="form__row form__row--align-bottom">
+                            <div class="range__wrap">
+                                <div class="range__row">
+                                    <h5 class="range__title">Sed ut perspiciatis, unde omnis iste natus</h5>
+                                    <span id="range__value" class="range__val"></span>
+                                </div>
+                                <input type="range" min="0" max="100" step="1" value="75" class="range__inp" id="range__inp_type">
+                            </div>
+                            <div class="form__file-wrap">
+                                <input class="input-file" id="my-file" type="file" multiple>
+                                <label tabindex="0" for="my-file" class="input-file-trigger">Выберите файл</label>
+                            </div>
+                        </div>
+                        <input class="form__submit-btn" type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrap">
+                    <div class="footer__copyright">© 2022 <span>«LoremIpsum.net»</span> Все&nbsp;права&nbsp;защищены.</div>
+                    <div class="footer__payment">
+                        <ul class="footer__payment-list">
+                            <li>
+                                <img src="img/qiwi-icon.svg" alt="#" class="footer__payment-icon">
+                                QIWI wallet
+                            </li>
+                            <li>
+                                <img src="img/yandex-money.svg" alt="#" class="footer__payment-icon footer__payment-icon--yandex">
+                                Yandex Money
+                            </li>
+                            <li>
+                                <img src="img/web-money-icon.svg" alt="#" class="footer__payment-icon">
+                                Web Money
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__socials">
+                        <ul class="footer__socials-list">
+                            <li>
+                                <a href="mailto:info@ipsum228.com" class="footer__socials-link">
+                                    <img src="img/mail-icon.svg" alt="#" class="footer__socials-icon">
+                                    info@ipsum228.com
+                                </a> 
+                            </li>
+                            <li> 
+                                <a href="#" class="footer__socials-link">
+                                    <img src="img/vk-icon.svg" alt="#" class="footer__socials-icon"> 
+                                    Мы&nbsp;вконтакте
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+    <script src="https://raw.github.com/javanto/jquery-fileinput/3.1.0/dist/jquery.fileinput.min.js"></script>
+    <script src="libs/jqueryui-selectmenu/jquery-ui.min.js"></script>
+    <script src="libs/jquery-fileinput/jquery-fileinput.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
